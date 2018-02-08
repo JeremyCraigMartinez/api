@@ -29,10 +29,10 @@
     "nodemon": "^1.14.12"
   },
   "dependencies": {
+    "ajv": "^6.1.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "jsonschema": "^1.2.2"
+    "express": "^4.16.2"
   }
 }
