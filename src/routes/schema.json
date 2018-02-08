@@ -1,0 +1,32 @@
+{
+  "/api/sensor": {
+    "POST": {
+      "id": "/PostSensor",
+      "type": "object",
+      "properties": {
+        "device_uuid": {
+          "type": "string"
+        },
+        "sensor_type": {
+          "type": "string",
+          "enum": ["temperature", "humidity"]
+        },
+        "sensor_value": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "sensor_reading_time": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "device_uuid",
+        "sensor_type",
+        "sensor_value",
+        "sensor_reading_time"
+      ]
+    }
+  }
+}
